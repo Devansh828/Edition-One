@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.paperproject.billing.BillingController">
+   <children>
+      <Label layoutX="40.0" layoutY="99.0" text="Mobile Number">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TextMobile" layoutX="150.0" layoutY="95.0" />
+      <Button layoutX="333.0" layoutY="95.0" mnemonicParsing="false" onAction="#Fetch" text="Fetch" />
+      <Label layoutX="38.0" layoutY="142.0" text="Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TextName" layoutX="37.0" layoutY="161.0" />
+      <Label layoutX="238.0" layoutY="142.0" text="Date Of Start">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="432.0" layoutY="142.0" text="Total Price per day">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TextTotalPrice" layoutX="432.0" layoutY="160.0" prefHeight="26.0" prefWidth="127.0" />
+      <Label layoutX="68.0" layoutY="349.0" text="Bill Amount">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TextBillAmount" layoutX="150.0" layoutY="345.0" />
+      <Label layoutX="432.0" layoutY="211.0" text="Less No. Of Days">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TextDays" editable="false" layoutX="238.0" layoutY="234.0" prefHeight="26.0" prefWidth="127.0" />
+      <Label layoutX="42.0" layoutY="211.0" text="Date Up to">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="347.0" layoutY="345.0" mnemonicParsing="false" onAction="#SaveBill" text="Save Bill" />
+      <Button layoutX="274.0" layoutY="287.0" mnemonicParsing="false" onAction="#GenerateBill" text="Gen Bill" />
+      <Label layoutX="278.0" layoutY="33.0" prefHeight="26.0" prefWidth="66.0" text="Billing">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="Datedos" layoutX="236.0" layoutY="160.0" prefHeight="26.0" prefWidth="150.0" />
+      <DatePicker fx:id="Datedoe" layoutX="36.0" layoutY="234.0" onAction="#setDays" prefHeight="26.0" prefWidth="150.0" />
+      <TextField fx:id="TextLessDays" layoutX="426.0" layoutY="234.0" prefHeight="26.0" prefWidth="127.0" />
+      <Label layoutX="241.0" layoutY="211.0" text="No. Of Days">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

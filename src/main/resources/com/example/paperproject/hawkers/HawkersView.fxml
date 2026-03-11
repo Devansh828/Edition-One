@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="673.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.paperproject.hawkers.HawkersController">
+   <children>
+      <Label layoutX="44.0" layoutY="248.0" text="Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TextName" layoutX="130.0" layoutY="244.0" />
+      <Label layoutX="319.0" layoutY="309.0" text="Adhaar Card No.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TextAdhaar" layoutX="435.0" layoutY="306.0" />
+      <Label layoutX="40.0" layoutY="309.0" text="Address">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TextAddress" layoutX="131.0" layoutY="306.0" />
+      <Label layoutX="350.0" layoutY="248.0" text="Contact">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TextContact" layoutX="435.0" layoutY="244.0" />
+      <ComboBox fx:id="ComboHawkerID" layoutX="131.0" layoutY="169.0" prefWidth="150.0" />
+      <Label layoutX="31.0" layoutY="172.0" prefHeight="18.0" prefWidth="68.0" text="Hawker ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="439.0" prefHeight="20.0" prefWidth="110.0" text="Date of Joining">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="318.0" layoutY="372.0" prefHeight="18.0" prefWidth="83.0" text="Selectd Areas">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="371.0" prefHeight="18.0" prefWidth="68.0" text="All Areas">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="ComboAllAreas" layoutX="131.0" layoutY="368.0" onAction="#doselareas" prefWidth="150.0" />
+      <DatePicker fx:id="DateOfJoining" layoutX="136.0" layoutY="436.0" />
+      <Button layoutX="332.0" layoutY="169.0" mnemonicParsing="false" onAction="#Fetch" text="Fetch" />
+      <Button layoutX="514.0" layoutY="182.0" mnemonicParsing="false" onAction="#Browse" text="Browse" />
+      <Button layoutX="85.0" layoutY="507.0" mnemonicParsing="false" onAction="#Clear" text="Clear" />
+      <Button layoutX="195.0" layoutY="507.0" mnemonicParsing="false" onAction="#Save" text="Recruit Now" />
+      <Button layoutX="344.0" layoutY="507.0" mnemonicParsing="false" onAction="#Update" text="Modify" />
+      <Button layoutX="472.0" layoutY="507.0" mnemonicParsing="false" onAction="#Delete" text="Delete" />
+      <ImageView fx:id="ImgPrev" fitHeight="91.0" fitWidth="122.0" layoutX="494.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@admininfo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="86.0" layoutX="26.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@admininfo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="236.0" layoutY="56.0" prefHeight="35.0" prefWidth="175.0" text="Hawkers Console" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="BoxSelAreas" layoutX="423.0" layoutY="368.0" prefHeight="78.0" prefWidth="186.0" />
+   </children>
+</AnchorPane>
